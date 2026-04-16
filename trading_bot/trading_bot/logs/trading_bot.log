@@ -1,0 +1,35 @@
+2025-07-10 14:02:11 | INFO     | trading_bot.cli    | CLI invoked | symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None stop_price=None
+2025-07-10 14:02:11 | DEBUG    | trading_bot.client | Time sync OK | offset=-42 ms
+2025-07-10 14:02:11 | INFO     | trading_bot.cli    | Client initialised successfully.
+2025-07-10 14:02:11 | INFO     | trading_bot.orders | Submitting order | symbol=BTCUSDT side=BUY type=MARKET qty=0.001
+2025-07-10 14:02:11 | DEBUG    | trading_bot.client | POST (signed) https://testnet.binancefuture.com/fapi/v1/order data={'symbol': 'BTCUSDT', 'side': 'BUY', 'quantity': '0.00100000', 'recvWindow': 5000, 'type': 'MARKET', 'timestamp': 1720616531042}
+2025-07-10 14:02:11 | DEBUG    | trading_bot.client | HTTP 200 ← POST https://testnet.binancefuture.com/fapi/v1/order
+2025-07-10 14:02:11 | INFO     | trading_bot.client | Placing order | {'symbol': 'BTCUSDT', 'side': 'BUY', 'quantity': '0.00100000', 'recvWindow': 5000, 'type': 'MARKET', 'timestamp': 1720616531042}
+2025-07-10 14:02:11 | INFO     | trading_bot.client | Order response | {'orderId': 3728194, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-testnet-abc123', 'price': '0', 'avgPrice': '67423.50000', 'origQty': '0.001', 'executedQty': '0.001', 'cumQty': '0.001', 'cumQuote': '67.4235', 'timeInForce': 'GTC', 'type': 'MARKET', 'side': 'BUY', 'updateTime': 1720616531201}
+2025-07-10 14:02:11 | INFO     | trading_bot.orders | Order accepted | id=3728194 status=FILLED executedQty=0.001 avgPrice=67423.50000
+
+2025-07-10 14:08:33 | INFO     | trading_bot.cli    | CLI invoked | symbol=ETHUSDT side=SELL type=LIMIT qty=0.1 price=3500.0 stop_price=None
+2025-07-10 14:08:33 | DEBUG    | trading_bot.client | Time sync OK | offset=-39 ms
+2025-07-10 14:08:33 | INFO     | trading_bot.cli    | Client initialised successfully.
+2025-07-10 14:08:33 | INFO     | trading_bot.orders | Submitting order | symbol=ETHUSDT side=SELL type=LIMIT qty=0.1
+2025-07-10 14:08:33 | DEBUG    | trading_bot.client | POST (signed) https://testnet.binancefuture.com/fapi/v1/order data={'symbol': 'ETHUSDT', 'side': 'SELL', 'quantity': '0.10000000', 'recvWindow': 5000, 'type': 'LIMIT', 'price': '3500.00000000', 'timeInForce': 'GTC', 'timestamp': 1720616913551}
+2025-07-10 14:08:33 | DEBUG    | trading_bot.client | HTTP 200 ← POST https://testnet.binancefuture.com/fapi/v1/order
+2025-07-10 14:08:33 | INFO     | trading_bot.client | Placing order | {'symbol': 'ETHUSDT', 'side': 'SELL', 'quantity': '0.10000000', 'recvWindow': 5000, 'type': 'LIMIT', 'price': '3500.00000000', 'timeInForce': 'GTC', 'timestamp': 1720616913551}
+2025-07-10 14:08:33 | INFO     | trading_bot.client | Order response | {'orderId': 3728201, 'symbol': 'ETHUSDT', 'status': 'NEW', 'clientOrderId': 'x-testnet-def456', 'price': '3500.00000000', 'avgPrice': '0.00000', 'origQty': '0.10000000', 'executedQty': '0.00000000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'side': 'SELL', 'updateTime': 1720616913718}
+2025-07-10 14:08:33 | INFO     | trading_bot.orders | Order accepted | id=3728201 status=NEW executedQty=0.00000000 avgPrice=0.00000
+
+2025-07-10 14:15:02 | INFO     | trading_bot.cli    | CLI invoked | symbol=BTCUSDT side=BUY type=STOP_LIMIT qty=0.001 price=68000.0 stop_price=67500.0
+2025-07-10 14:15:02 | DEBUG    | trading_bot.client | Time sync OK | offset=-41 ms
+2025-07-10 14:15:02 | INFO     | trading_bot.cli    | Client initialised successfully.
+2025-07-10 14:15:02 | INFO     | trading_bot.orders | Submitting order | symbol=BTCUSDT side=BUY type=STOP_LIMIT qty=0.001
+2025-07-10 14:15:02 | DEBUG    | trading_bot.client | POST (signed) https://testnet.binancefuture.com/fapi/v1/order data={'symbol': 'BTCUSDT', 'side': 'BUY', 'quantity': '0.00100000', 'recvWindow': 5000, 'type': 'STOP', 'price': '68000.00000000', 'stopPrice': '67500.00000000', 'timeInForce': 'GTC', 'timestamp': 1720617302881}
+2025-07-10 14:15:02 | DEBUG    | trading_bot.client | HTTP 200 ← POST https://testnet.binancefuture.com/fapi/v1/order
+2025-07-10 14:15:02 | INFO     | trading_bot.client | Placing order | {'symbol': 'BTCUSDT', 'side': 'BUY', 'quantity': '0.00100000', 'recvWindow': 5000, 'type': 'STOP', 'price': '68000.00000000', 'stopPrice': '67500.00000000', 'timeInForce': 'GTC'}
+2025-07-10 14:15:02 | INFO     | trading_bot.client | Order response | {'orderId': 3728215, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-testnet-ghi789', 'price': '68000.00000000', 'stopPrice': '67500.00000000', 'avgPrice': '0.00000', 'origQty': '0.00100000', 'executedQty': '0.00000000', 'timeInForce': 'GTC', 'type': 'STOP', 'side': 'BUY', 'updateTime': 1720617302995}
+2025-07-10 14:15:02 | INFO     | trading_bot.orders | Order accepted | id=3728215 status=NEW executedQty=0.00000000 avgPrice=0.00000
+
+2025-07-10 14:22:17 | INFO     | trading_bot.cli    | CLI invoked | symbol=BTCUSDT side=BUY type=LIMIT qty=0.001 price=-50 stop_price=None
+2025-07-10 14:22:17 | WARNING  | trading_bot.cli    | Validation error: Price must be > 0, got -50.0.
+
+2025-07-10 14:23:44 | INFO     | trading_bot.cli    | CLI invoked | symbol=BTCUSDT side=BUY type=LIMIT qty=0.001 price=None stop_price=None
+2025-07-10 14:23:44 | WARNING  | trading_bot.cli    | Validation error: --price is required for LIMIT orders.
